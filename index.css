@@ -176,16 +176,22 @@ p{
   background-color: green;
   color: white;
 }
-.pro{
+/* .pro{
+  margin-top: 5%;
   margin-left: 40%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} */
+
+.ul{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.pr{
-    border-radius: 5px;
-    border: 1px;
-    padding: 1% 1%;
-    margin-left: 40%;
-    margin-top: 5%;
-   }
-
+.profile-wrapper {
+  background-color: #fff;
+  padding: 5%;
+  margin: 5% 10%;
+  border-radius: 20px;
+  margin: 5% 10%;
+  box-shadow: 3px 2px 8px 2px #888888;
+  text-align: center;
+}
