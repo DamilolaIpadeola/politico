@@ -209,7 +209,6 @@ td, th {
   padding: 8px;
 }
 
-
 .case {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   background-color: whitesmoke;
@@ -218,8 +217,11 @@ td, th {
   width: 50%;
   padding: 10%;
   margin-top: 2%;
-  margin: auto;
+  margin: auto
 }
 .case-wrapper {
   display: flex;
+}
+.logo{
+  height: 110px;
 }
