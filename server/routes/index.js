@@ -14,6 +14,7 @@ app.get('/api/v1', (req, res) => {
 });
 
 app.post('/api/v1/parties', checkCreatePartyInput, PartyController.createParty);
+app.get('/api/v1/parties', PartyController.getParty)
 
 
 export default app;

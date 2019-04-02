@@ -16,6 +16,16 @@ class PartyController {
 
         })
     };
+
+    static getParty(req, res) {
+        return res.status(200).json({
+            status: true,
+            party
+        })      
+
+    }
+
+
 }
 
 export default PartyController;
