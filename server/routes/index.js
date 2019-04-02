@@ -1,6 +1,6 @@
 import express from 'express';
 import PartyController from '../../dummyServer/controllers/party';
-import {checkCreatePartyInput,} from '../../dummyServer/middleware/validation' 
+import {checkCreatePartyInput, checkGetSpecificParty} from '../../dummyServer/middleware/validation' 
 
 
 const app = express.Router();
@@ -15,6 +15,7 @@ app.get('/api/v1', (req, res) => {
 
 app.post('/api/v1/parties', checkCreatePartyInput, PartyController.createParty);
 app.get('/api/v1/parties', PartyController.getParty)
+app.get('/api/v1/parties/:id', checkGetSpecificParty, PartyController.getSpecificParty);
 
 
 export default app;

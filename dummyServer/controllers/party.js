@@ -24,6 +24,27 @@ class PartyController {
         })      
 
     }
+    static getSpecificParty(req, res) {
+        let data;
+        for(let i= 0; i < party.length; i++) {
+            if(req.params.id == party[i].id) {
+                data = party[i];
+            }
+        }
+        if (data) {
+            return res.status(200).json({
+                status: true,
+                data: data
+            })
+        } else {
+            return res.status(200).json({
+                status: true,
+                message: 'no party found'
+            })
+        }
+   
+    }
+    
 
 
 }
