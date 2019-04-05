@@ -13,6 +13,23 @@ class officesController{
             data: offices[offices.lenght - 1]
         })
     }
+
+
+    static getAllOffices(request, response) {
+        if (offices.length === 0) {
+            return request.status(404).json({
+                status: true,
+                message: "no Offices available"
+            })
+
+        }
+        return response.status(200).json({
+            status: true,
+            data: offices
+        })
+    }
+
+    
 }
 
 export default officesController;
