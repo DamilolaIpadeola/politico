@@ -29,6 +29,26 @@ class officesController{
         })
     }
 
+    static getSpecificOffices(request, response) {
+        let data;
+        for (let i = 0; i < offices.length; i++) {
+            if (request.params.id == offices[i].id) {
+                data = offices[i];
+            }
+        }
+        if (data) {
+            return response.status(200).json({
+                status: true,
+                data: data
+            })
+        } else {
+            return response.status(404).json({
+                status: true,
+                message: 'no Office found'
+            })
+        }
+
+    }
     
 }
 
