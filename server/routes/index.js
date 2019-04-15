@@ -10,7 +10,7 @@ app.get('/api/v1', (req, res) => {
             status: true,
             message: "Welcome to politico API."
         });
-});
+});N
 
 app.post('/api/v1/parties', checkCreatePartyInput, PartyController.createParty);
 app.get('/api/v1/parties', PartyController.getParty)
